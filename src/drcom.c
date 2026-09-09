@@ -20,8 +20,14 @@ uint32_t drcom_crc32(uint8_t *data, int data_len) {
 	uint32_t ret = 0;
 	int i;
 	for (i = 0; i < data_len; i += 4) {
-		ret ^= *(unsigned int *) (data + i);
-		ret &= 0xFFFFFFFF;
+		uint32_t word = 0;
+		int chunk = data_len - i;
+		if (chunk > 4)
+			chunk = 4;
+		// 用 memcpy 取 4 字节，避免在 MIPS/部分 ARM 上因缓冲区非对齐
+		// 触发对齐异常；不足 4 字节时以 0 填充，避免越界读。
+		memcpy(&word, data + i, chunk);
+		ret ^= word;
 	}
 
 	// 大端小端的坑
