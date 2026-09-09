@@ -23,7 +23,6 @@ PKG_VERSION:=2026.9.9
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-# TODO: 上传项目后，把下面的地址替换成你自己的仓库地址
 PKG_SOURCE_URL:=https://github.com/AidenLee1994/scutclient.git
 # 直接拉取主线最新代码，不锁定 tag。若仓库默认分支是 master，请把 main 改成 master。
 PKG_SOURCE_VERSION:=main
