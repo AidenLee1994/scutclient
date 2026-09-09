@@ -2,6 +2,7 @@
 
 **SCUT Dr.com(X) 校园网认证客户端 · SCUT Dr.com(X) campus-network authentication client written in C.**
 
+![OpenWrt](<https://img.shields.io/badge/OpenWrt-21.xx%20~%2025.xx-blue>)
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 > 关键词 / Keywords: scutclient · drcom · SCUT · 华南理工大学 · 校园网 · 宽带认证 · campus network · broadband authentication · 802.1x · EAPOL · OpenWrt · router authentication
