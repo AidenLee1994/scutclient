@@ -1,5 +1,4 @@
 #
-# Copyright (C) 2016-2018 SCUT Router Term
 # Copyright (C) 2026 Dr. Lee
 #
 # Maintained by Dr. Lee. Based on the original scutclient project
@@ -24,9 +23,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/AidenLee1994/scutclient.git
-# 直接拉取主线最新代码，不锁定 tag。若仓库默认分支是 master，请把 main 改成 master。
-PKG_SOURCE_VERSION:=main
-# 拉取的是活动分支、内容会变，跳过下载缓存的哈希校验
+PKG_SOURCE_VERSION:=63972fc82d3599b23fc998f8e630e00d08fd2fc8
 PKG_MIRROR_HASH:=skip
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
