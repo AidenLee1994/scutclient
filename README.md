@@ -1,4 +1,4 @@
-# scutclient
+# scutclient 2026.9.9版本 超强兼容版
 
 **SCUT Dr.com(X) 校园网认证客户端 · SCUT Dr.com(X) campus-network authentication client written in C.**
 
