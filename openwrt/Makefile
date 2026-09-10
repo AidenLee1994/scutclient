@@ -21,12 +21,11 @@ else
 PKG_VERSION:=2026.9.9
 PKG_RELEASE:=1
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/AidenLee1994/scutclient.git
-PKG_SOURCE_VERSION:=63972fc82d3599b23fc998f8e630e00d08fd2fc8
+PKG_SOURCE_URL:=https://codeload.github.com/AidenLee1994/scutclient/tar.gz/refs/heads/main
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_HASH:=skip
 PKG_MIRROR_HASH:=skip
-PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
+PKG_SOURCE_SUBDIR:=$(PKG_NAME)-main
 endif
 
 PKG_MAINTAINER:=Dr. Lee
